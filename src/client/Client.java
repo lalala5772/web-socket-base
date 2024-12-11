@@ -32,10 +32,8 @@ public class Client {
 	public static void main(String[] args) {
 		
 		try {
-//			String ipAddress = "10.5.5.12";
 			InetAddress localAddress = InetAddress.getLocalHost();
 			
-//			Socket client = new Socket(ipAddress, 20001);
 			Socket client = new Socket(localAddress, 20000);
 			
 			DataInputStream dis = new DataInputStream(client.getInputStream());
